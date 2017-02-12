@@ -1,4 +1,5 @@
 var mongoose = require('mongoose');
+
 var Todo = mongoose.model('Todo', {
   text: {
     type: String,
@@ -8,7 +9,7 @@ var Todo = mongoose.model('Todo', {
   },
   completed: {
     type: Boolean,
-    default: false,
+    default: false
   },
   completedAt: {
     type: Number,
